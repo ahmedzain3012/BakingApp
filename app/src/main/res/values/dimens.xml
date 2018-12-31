@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="card_corner_radius">1dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="CardMargin">5dp</dimen>
+    <dimen name="cardTextHeight">100dp</dimen>
+    <dimen name="progressBarSize">42dp</dimen>
+    <bool name="isTablet">false</bool>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

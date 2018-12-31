@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/CardMargin"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="com.example.android.az.bakingapp.com.az.bakingapp.RecipeStepDescriptionListActivity">
+
+    <!--<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/item_width"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/ingredients"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/card_elevation"
+            android:paddingBottom="@dimen/card_elevation"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginStart="@dimen/CardMargin"
+            android:layout_marginEnd="@dimen/CardMargin"
+            android:text="@string/ingredients"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin"
+            android:elevation="@dimen/card_elevation"
+            android:background="@color/cardview_light_background"
+            tools:targetApi="lollipop" />-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipestepdescription_list"
+            android:name="com.example.android.az.bakingapp.RecipeStepDescriptionListFragment"
+            android:layout_width="@dimen/item_width"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"
+            tools:context="com.example.android.az.bakingapp.com.az.bakingapp.RecipeStepDescriptionListActivity"
+            tools:listitem="@layout/recipestepdescription_list_content" />
+    <!--</LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/recipestepdescription_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

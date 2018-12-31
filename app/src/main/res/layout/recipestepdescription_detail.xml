@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.android.az.bakingapp.com.az.bakingapp.RecipeStepDescriptionDetailFragment">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recipestepdescriptionDetails_list"
+        android:name="com.example.android.az.bakingapp.RecipeStepDescriptionListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/recipestepdescription_list_content" />
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+    <LinearLayout
+        android:id="@+id/stepList"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/recipestepdescription_detail"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textIsSelectable="true" />
+        <ImageView
+            android:id="@+id/recipestepdescription_image"
+            android:src="@drawable/example_appwidget_preview"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+

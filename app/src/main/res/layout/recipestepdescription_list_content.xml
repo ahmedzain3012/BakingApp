@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/card_elevation"
+    android:paddingBottom="@dimen/card_elevation"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_marginTop="@dimen/margin"
+    android:layout_marginStart="@dimen/CardMargin"
+    android:layout_marginEnd="@dimen/CardMargin"
+    android:layout_width="fill_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/fab_margin"
+    android:paddingRight="@dimen/fab_margin"
+    android:background="?attr/selectableItemBackground"
+    />

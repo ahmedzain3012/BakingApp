@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/margin"
+    android:layout_marginEnd="@dimen/margin">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recipes"
+            tools:context="com.example.android.az.bakingapp.com.az.bakingapp.MainActivity">
+        </android.support.v7.widget.RecyclerView>
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_width="@dimen/progressBarSize"
+            android:layout_height="@dimen/progressBarSize"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+</android.support.design.widget.CoordinatorLayout>
+
+
